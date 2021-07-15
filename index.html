@@ -5,7 +5,7 @@
   <style>
     * { box-sizing:border-box; }
     body { font-family:'Helvetica Neue', sans-serif; color: #170e2b; background-color: #f9faf9; padding: 0; margin: 0; }
-    #content { width: 60em; margin-block-start:4em; font-size: 2rem; margin:0 auto; }
+    #content { width: 60em; margin-block-start:10em; font-size: 2rem; margin:0 auto; }
     #area { width: 100%; height: 4000px; }
     #box { position: absolute; zIndex: 12; top: 3500px; left: 500px; width:100px; height: 100px; background-color: rgb(40, 130, 184) }
     
@@ -14,8 +14,9 @@
 <body>
   <section id="content">
     <h1>Bounding Client Rect</h1>
+    <p>A blue box has been randomly positioned on a page. <i>(You may need to scroll for it.)</i> To us, it might be obvious to tell if we can see it, but to a computer, we have to provide some instructions.</p>
     <p>Use <code>document.querySelector('#box').getBoundingClientRect()</code> along with window properties to determine if a box is fully or partly visible at any given time.</p>
-    <p>Try with different scroll positions</p>
+    <p>Try with different scroll positions.</p>
   </section>
   <section id="area">
     
